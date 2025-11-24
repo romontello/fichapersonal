@@ -181,3 +181,11 @@ body{
   .avatar img{width:105px;height:105px;}
 }
 
+.btn.secondary {
+  background: #F7E9EC;
+  color: #744D5A;
+  margin-top: 8px;
+}
+.btn.secondary:hover {
+  background: #EED4DB;
+}
