@@ -1,10 +1,10 @@
-/* VARIABLES */
+
 :root{
   --bg: #f7f5f2;
   --card: #ffffff;
   --muted: #7b7b7b;
   --text: #222222;
-  --accent: #ff7aac;   /* rosa aesthetic */
+  --accent: #ff7aac;   
   --accent-soft: #ffcfe1;
   --soft: #f1eceb;
   --glass: rgba(255,255,255,0.6);
@@ -29,7 +29,7 @@
   --shadow-hover: 0 12px 28px rgba(255,146,184,0.23);
 }
 
-/* RESET */
+
 *{
   box-sizing: border-box;
   transition: var(--transition);
@@ -44,7 +44,7 @@ body{
   animation: fadeIn .8s ease forwards;
 }
 
-/* FADE */
+
 @keyframes fadeIn{
   from{opacity:0; transform: translateY(6px);}
   to{opacity:1; transform: translateY(0);}
@@ -56,7 +56,7 @@ body{
   padding:20px;
 }
 
-/* HEADER */
+
 .topbar{
   background: linear-gradient(90deg, var(--accent), transparent);
   padding:18px 0;
@@ -66,7 +66,7 @@ body{
   box-shadow:var(--shadow);
 }
 
-/* MAIN CARD */
+
 .main-card{
   background:var(--card);
   border-radius:var(--radius);
@@ -75,7 +75,7 @@ body{
   box-shadow:var(--shadow);
 }
 
-/* PROFILE */
+
 .profile{
   display:flex;
   gap:22px;
@@ -97,7 +97,7 @@ body{
   box-shadow:0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* META */
+
 .meta-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -110,7 +110,6 @@ body{
   border-radius:12px;
 }
 
-/* PROJECT CARDS */
 .cards{
   margin-top:25px;
   display:grid;
@@ -130,7 +129,6 @@ body{
   transform: translateY(0);
 }
 
-/* HOVER ESTÉTICO */
 .card:hover{
   box-shadow: var(--shadow-hover);
   transform: translateY(-6px);
@@ -152,7 +150,6 @@ body{
   margin:0 0 10px 0;
 }
 
-/* BOTON AESTHETIC */
 .btn{
   text-decoration:none;
   text-align:center;
@@ -170,7 +167,6 @@ body{
   box-shadow:0 10px 22px rgba(255,122,172,0.32);
 }
 
-/* RESPONSIVE */
 @media(max-width:900px){
   .cards{grid-template-columns:repeat(2,1fr);}
 }
@@ -189,3 +185,4 @@ body{
 .btn.secondary:hover {
   background: #EED4DB;
 }
+
