@@ -1,4 +1,3 @@
-// Theme toggle persisted en localStorage
 (function(){
   const root = document.documentElement;
   const toggle = document.getElementById('theme-toggle');
@@ -14,7 +13,6 @@
     localStorage.setItem('site-theme', theme);
   }
 
-  // init
   const saved = localStorage.getItem('site-theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   setTheme(saved);
 
@@ -24,4 +22,5 @@
       setTheme(current === 'dark' ? 'light' : 'dark');
     });
   }
+
 })();
